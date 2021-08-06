@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button class="w3-text-white"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="w3-center">LOGIN PAGE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="w3-container">
+  <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Username / Email</ion-label>
+            <ion-input type="text" [(ngModel)]="user" required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" [(ngModel)]="password" required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="w3-center">
+          <a class="w3-text-red" [routerLink]="['/fpassword']">Forgot Password?</a>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="w3-margin-top" >
+          <ion-button color="primary" expand="block" (click)="log()">Login</ion-button>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>
+
+

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <div class="w3-center">
+      <ion-title>
+        Home Page
+      </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="w3-container background">
+  <ion-card>
+    <div class="w3-center" *ngFor="let u of user" >
+      <h4><b>{{u.firstname}} {{u.lastname}}</b></h4>
+      <h5>{{u.course}}</h5>
+      <h6>{{u.school}}</h6>
+    </div>
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button routerLink="/project-topics" class="w3-center" size='large' expand="block" shape="round"> Project Topics </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button routerLink="/assignment" class="w3-center" size='large' expand="block" shape="round"> Assignment </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

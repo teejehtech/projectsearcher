@@ -1,0 +1,7 @@
+{
+  "name": "projectsearcher",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

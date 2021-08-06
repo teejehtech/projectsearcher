@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar color='danger'>
+    <ion-title >signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="margin-top: 80px;">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-input [(ngModel)]="FirstName" placeholder="First Name" type='text' class="w3-border w3-round w3-input" required></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input [(ngModel)]="LastName" placeholder="Last Name" type='text' class="w3-border w3-round w3-input" required></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-select placeholder="Gender" [(ngModel)]="gender">
+            <ion-select-option value="Female">Female</ion-select-option>
+            <ion-select-option value="Male">Male</ion-select-option>
+          </ion-select>
+        </ion-col>
+        <ion-col>
+          <ion-input [(ngModel)]="School" placeholder="University" type='text' class="w3-border w3-round w3-input" required></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input [(ngModel)]="Faculty" placeholder="Faculty" type='text' class="w3-border w3-round w3-input" required></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input [(ngModel)]="Department" placeholder="Department" type='text' class="w3-border w3-round w3-input" required></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input [(ngModel)]="State" placeholder="State" type='text' class="w3-border w3-round w3-input" required></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input [(ngModel)]="Username" placeholder="Username" type='text' class="w3-border w3-round w3-input" required></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input [(ngModel)]="Email" placeholder="Email" type='Email' class="w3-border w3-round w3-input" required></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input [(ngModel)]="RetypeEmail" placeholder="Re-Type" type='Email' class="w3-border w3-round w3-input" required></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input [(ngModel)]="Password" placeholder="Password" type='Password' class="w3-border w3-round w3-input" required></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input [(ngModel)]="RetypePassword" placeholder="Re-Type" type='Password' class="w3-border w3-round w3-input" required></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button color="primary" class="w3-margin-left" [routerLink]="['/home']">Home</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="primary" class="w3-margin-right" (click)="log()">Register</ion-button>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+    
+    
+
+  </div>
+</ion-content>

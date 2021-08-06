@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button class="w3-text-black"></ion-back-button>
+    </ion-buttons>
+    <ion-title>assignment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- Default Searchbar -->
+    <ion-searchbar [(ngModel)]="search" required></ion-searchbar>
+    <ion-button class="w3-center"  (click)="Search()"> search </ion-button>
+    <div class="w3-container">
+      <ion-card *ngFor="let item of Result" >
+        <ion-card-content>
+          <a href="{{item['link']}}">{{item['title']}}</a>
+        </ion-card-content>
+      </ion-card>
+    </div>
+</ion-content>
